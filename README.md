@@ -12,8 +12,9 @@ The code runs on an Arduino Uno and uses the Adafruit NeoPixel library.
 
 The pins are mapped to:
 
-|| ID || description || Arduino pin ||
-| SPEAKER_PIN | piezo sounder | 2 |
-| ARM_SWITCH_PIN | switch | 4 |
-| DEPLOY_BUTTON_PIN | big red button | 3 |
-| PIXELS_PIN | pixels data pin | 6 |
+ID | description | Arduino pin
+--- | --- | ---
+SPEAKER_PIN | piezo sounder | 2
+ARM_SWITCH_PIN | switch | 4
+DEPLOY_BUTTON_PIN | big red button | 3
+PIXELS_PIN | pixels data pin | 6
