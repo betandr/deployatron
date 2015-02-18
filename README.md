@@ -8,7 +8,7 @@ The Deployatron is an exploration into the process of releasing software and is 
 
 #The Code
 
-The code runs on an Arduino Uno and uses the Adafruit NeoPixel library.
+The code runs on an Arduino Uno and uses the [Adafruit NeoPixel library](https://github.com/adafruit/Adafruit_NeoPixel).
 
 The pins are mapped to:
 
