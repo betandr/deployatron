@@ -22,7 +22,9 @@ void setup() {
   pinMode(DEPLOY_BUTTON_PIN, INPUT);
   
   pixels.begin();
-  pixels.show(); // Initialize all pixels to 'off'
+  pixels.show();
+  
+  Serial.begin(9600);
 }
 
 void loop() {  
@@ -36,6 +38,7 @@ void loop() {
       pixels.show();
       isArmed = true;
       isDeployed = false;
+      Serial.write("ARMED");
     }
     
   } else {
@@ -48,6 +51,7 @@ void loop() {
   
   if (deployButtonState == LOW) {
       if (isArmed && !isDeployed) {
+        Serial.write("DEPLOY");
         pulseAll();
         isDeployed = true;
       }
